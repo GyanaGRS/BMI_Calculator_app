@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#60929A"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI [Body Mass Index] Calculator"
+        android:layout_marginBottom="120dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#E1DADC"
+        android:textColorHighlight="#812020"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_weight"
+        android:id="@+id/editWeight"
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_heightFt"
+        android:id="@+id/editHeightFt"
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_heightInch"
+        android:id="@+id/editHeightInch"
+        android:inputType="number"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Calculate BMI"
+        android:background="#C6B768"
+        android:id="@+id/btnCalculator"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textResult"
+        android:text="Result"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
